@@ -5,6 +5,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-wedge'; // Text domain
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 	/**
@@ -117,8 +118,29 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#1a1a1a';
 
-	// Fonts & Icons
-	$boldgrid_framework_configs['font']['types'] = array ( 'Julius+Sans+One:300,400|Open+Sans:400,600,800' );
+	// Typography Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Julius Sans One';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
+
+	// Typography Alternate Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
+
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
+	// Typography Navigation
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
+
+	// Typography Body
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+
+	// Icons
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
 	// Menu Locations

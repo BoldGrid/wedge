@@ -4,7 +4,7 @@ Author: The BoldGrid Team
 Theme URI: http://www.boldgrid.com/wedge
 Author URI: http://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.9
+Version: 1.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-wedge
@@ -56,21 +56,6 @@ body,
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-}
-.background-primary,
-.background-primary::before,
-.background-primary::after {
-    background-color: #fff;
-}
-.background-secondary,
-.background-secondary::before,
-.background-secondary::after {
-    background-color: #d9d9d9;
-}
-.background-tertiary,
-.background-tertiary::before,
-.background-tertiary::after {
-    background-color: #1a1a1a;
 }
 
 /* Container Fluid */
@@ -129,6 +114,129 @@ body,
 .page-template-page_home .site-main {
 	margin-bottom: 0;
 }
+p {
+	margin-bottom: 15px;
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+body {
+  	font-weight: 400;
+}
+h2 {
+  	font-weight: 400;	
+}
+h3 {
+	font-weight: 600;
+}
+h4 {
+  	font-weight: 400;	
+}
+h5 {
+	font-weight: 800;
+}
+h6 {
+  	font-weight: 400;	
+}
+.entry-title:first-letter {
+    font-size: 200%;
+}
+.link-secondary {
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+.link-primary:hover,
+.link-primary:focus,
+.link-secondary:hover,
+.link-secondary:focus {
+	text-decoration: none;
+}
+.button-primary,
+.button-secondary,
+input[type="submit"] {
+	text-transform: none;
+}
+.button-primary:hover,
+.button-primary:focus,
+.button-secondary:hover,
+.button-secondary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	text-decoration: none;
+}
+.call-to-action .button-primary {
+	text-transform: none;
+}
+.p-button-primary,
+.p-button-secondary {
+	white-space: nowrap;
+}
+.site-title {
+	font-weight: 300;
+}
+.site-description {
+	font-weight: 400;
+}
+.slogan {
+  	font-weight: 400;
+  	word-wrap: break-word;
+}
+.tagline {
+	line-height: 1.6em;
+}
+#site-navigation {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+#secondary-menu a,
+#menu-social a {
+    text-transform: uppercase;
+}
+#secondary-menu {
+    text-align: center;
+}
+.menu-social {
+	text-align: center;	
+}
+#menu-social li a {
+	text-align: right;
+	-webkit-font-smoothing: antialiased;
+}
+.mod-divider p {
+	text-align: center;
+}
+.woocommerce p.buttons a.button:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover {
+    text-decoration: none;
+}
+.site-footer p,
+.site-info,
+.attribution {
+	text-align: center;
+}
+
+/* xs */
+.site-title,
+.site-description {
+	text-align: center;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.site-title,
+	.site-description  {
+		text-align: left;
+	}
+}
 
 /* xs */
 .xs-center,
@@ -150,51 +258,25 @@ body,
 	}
 }
 
-/*-----------------------------------------------
-## Typography
------------------------------------------------*/
-body {
-	color: #1a1a1a;
-	font-family: "Open Sans";
-  	font-size: 14px;
-  	font-weight: 400;
+/* xs */
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
 }
-h2 {
-	color: #1a1a1a;	
-	font-family: "Julius Sans One";
-  	font-weight: 400;	
+
+/* sm */
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
 }
-h3 {
-	color: #1a1a1a;
-	font-family: "Open Sans";
-	font-size: 24px;
-	font-weight: 600;
-}
-h4 {
-	color: #a347ff;
-	font-family: "Open Sans";	
-	font-size: 20px;	
-  	font-weight: 400;	
-}
-h5 {
-	color: #1a1a1a;	
-	font-family: "Open Sans";	
-	font-size: 14px;
-	font-weight: 800;
-}
-h6 {
-	color: #a347ff;	
-	font-family: "Open Sans";	
-	font-size: 12px;
-  	font-weight: 400;	
-}
-p {
-	margin-bottom: 15px;
-}
-ul,
-ol {
-	font-family: "Open Sans";
-	line-height: 26px;
+
+/* sm */
+@media (min-width: 768px) {
+	.menu-social {
+	    text-align: right;
+	}
 }
 
 /*-----------------------------------------------
@@ -203,35 +285,10 @@ ol {
 .page-template-page_home .entry-title {
 	display: none;
 }
-.entry-title {
-	font-family: "Julius Sans One";
-}
-.entry-title:first-letter {
-	color: #a347ff;
-    font-size: 200%;
-}
 
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
-a,
-.link-primary {
-	color: #a347ff;
-}
-.link-secondary {
-	color: #1a1a1a;
-	text-decoration: none;
-}
-a:hover,
-a:focus,
-.link-primary:hover,
-.link-primary:focus,
-.link-secondary:hover,
-.link-secondary:focus {
-	color: #d9d9d9;
-	text-decoration: none;
-}
-
 /* Removes Blue Box in Chrome */
 *:focus {
 	outline: 0;
@@ -246,52 +303,21 @@ input[type="submit"] {
 	border: none;
 	border-radius: 2px;
 	display: inline-block;
-	font-size: 14px;
 	padding: 8px 45px;
-	text-transform: none;
-}
-.button-primary,
-input[type="submit"] {
-	background: #a347ff;	
-	color: #fff;
-}
-.button-secondary {
-	background-color: #d9d9d9;
-	color: #1a1a1a;
-}
-.button-primary:hover,
-.button-primary:focus,
-.button-secondary:hover,
-.button-secondary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-	background: #1a1a1a;
-	color: #fff;
-	text-decoration: none;
 }
 
 /* Call To Action */
 .call-to-action .button-primary {
-	background-color: #1a1a1a;
 	border: none;
 	border-radius: 2px;
-	color: #fff;
 	display: inline-block;
-	font-size: 14px;
 	padding: 8px 45px;
-	text-transform: none;
-}
-.call-to-action .button-primary:hover,
-.call-to-action .button-primary:focus {
-	background: #a347ff;
-	color: #fff;
 }
 
 /* Positioning */
 .p-button-primary,
 .p-button-secondary {
 	margin: 25px 0;
-	white-space: nowrap;
 }
 
 /* Block vs. Inline */
@@ -318,7 +344,6 @@ input[type="submit"]:focus {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	background: #a347ff;
 	border: 0;
 	height: 2px;	
 	margin: 0 0 30px 0;
@@ -326,7 +351,6 @@ hr {
 hr::after {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 8px solid #a347ff;
 	content: "";
     height: 0;
 	left: 50%;
@@ -343,10 +367,6 @@ hr::after {
     min-height: 20px;
     padding: 19px;
 }
-.widget.well, 
-.widget.well a {
-	color: #fff;
-}
 .hentry {
     margin: 0;
 }
@@ -354,70 +374,24 @@ hr::after {
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-.site-header {
-	background-color: #1a1a1a;
-}
-.site-title {
-	font-weight: normal;
-	font-weight: 300;
-}
-.site-title:first-letter {
-    color: #a347ff;
-}
-.site-title a,
-.site-title a:hover,
-.site-title a:active,
 .site-description {
-	color: #fff;
-}
-.site-description {
-	font-family: "Julius Sans One";
-	font-size: 24px;
-	font-weight: 400;
 	margin-left: 5px;
     margin-top: 0;
-}
-
-/* xs */
-.site-title,
-.site-description {
-	text-align: center;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.site-title,
-	.site-description  {
-		text-align: left;
-	}
 }
 
 /*-----------------------------------------------
 ## Call To Action
 -----------------------------------------------*/
 .call-to-action-wrapper {
-	background-color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 80px;
 }
 .call-to-action {
 	margin-bottom: 35px;
 }
-.slogan {
-	color: #1a1a1a;
-	font-family: "Julius Sans One";
-	font-size: 42px;
-  	font-weight: 400;
-  	word-wrap: break-word;
-}
-.tagline {
-	color: #1a1a1a;
-	line-height: 1.6em;
-}
 .call-to-action hr {
-	background: #1a1a1a;
 	margin-top: 0;
 }
-.call-to-action hr:after {
+.call-to-action hr::after {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -425,10 +399,10 @@ hr::after {
 	position: absolute;
 }
 
-/* sm */
+/* md */
 @media (min-width: 992px) {
 	.call-to-action-wrapper {
-	    background: transparent;
+	    background-color: none;
 	    margin-bottom: 0;
 	}
 	.call-to-action {
@@ -447,14 +421,6 @@ hr::after {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Typography */
-#site-navigation {
-	font-family: "Open Sans";
-	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
 /* Nav Reset */
 .navbar {
 	background-color: none;
@@ -476,7 +442,6 @@ hr::after {
 /* Links */
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > .active > a {
-    color: #fff;
     padding: 10px 20px;
 }
 .navbar-default .navbar-nav > li:first-child > a {
@@ -488,54 +453,17 @@ hr::after {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background: none;
-  	color: #a347ff;
-}
-
-/* Dropdown Menu */
-.dropdown-menu {
-	background-color: #1a1a1a;
-}	
-
-/* Dropdown Parent */
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .current-menu-parent > a {
-	background: none;
-	color: #a347ff;
-}
-
-/* Dropdown Child */
+.navbar-default .navbar-nav > .current-menu-parent > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     background: none;
-	color: #a347ff;
-}
-
-/* Nav Toggle */
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-	background-color: #fff;
-}
-.navbar-default .navbar-toggle .icon-bar,
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #a347ff;
-}
-
-/* xs */
-.navbar-default .navbar-nav,
-.navbar-default .navbar-nav .open .dropdown-menu {
-	text-align: center;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #fff;
 }
 
 /* sm */
@@ -544,22 +472,6 @@ hr::after {
 	.navbar-default .navbar-nav > .active > a {
 		background: transparent;
 		border-bottom: 3px solid transparent;
-	}
-	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus,
-	.navbar-default .navbar-nav > .active > a,
-	.navbar-default .navbar-nav > .active > a:hover,
-	.navbar-default .navbar-nav > .active > a:focus,
-	.navbar-default .navbar-nav > .open > a, 
-	.navbar-default .navbar-nav > .open > a:hover, 
-	.navbar-default .navbar-nav > .open > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a {
-		border-bottom: 3px solid #a347ff;
-	  	color: #fff;
-	}
-	.navbar-default .navbar-nav,
-	.navbar-default .navbar-nav .open .dropdown-menu {
-		text-align: left;
 	}
 	.navbar-default {
 		float: right;
@@ -571,26 +483,10 @@ hr::after {
 -----------------------------------------------*/
 #secondary-menu a,
 #menu-social a {
-	color: #a347ff;
-	font-family: "Open Sans";
-    font-size: 12px;
 	padding: 0 5px;
-    text-transform: uppercase;
 }
 #secondary-menu {
     background: none;
-    text-align: center;
-}
-#secondary-menu .current-menu-item a,
-#secondary-menu a[href]:hover,
-#secondary-menu a[href]:focus,
-#tertiary-menu .current-menu-item a,
-#tertiary-menu a[href]:hover,
-#tertiary-menu a[href]:focus,
-#footer-center-menu .current-menu-item a,
-#footer-center-menu a[href]:hover,
-#footer-center-menu a[href]:focus {
-    color: #fff;
 }
 #tertiary-menu {
 	margin-left: -5px;
@@ -610,8 +506,7 @@ hr::after {
 ## Social Menus
 -----------------------------------------------*/
 .menu-social {
-	padding: 0;
-	text-align: center;	
+	padding: 0;	
 }
 .menu-social ul {
 	padding-left: 0;
@@ -629,15 +524,7 @@ hr::after {
     position: relative;
 }
 #menu-social li a {
-	color: #fff;	
 	display: inline-block;
-	text-align: right;
-	-webkit-font-smoothing: antialiased;
-}
-#menu-social li a:hover,
-#menu-social li a:focus,
-#menu-social .current-menu-item a {
-	color: #a347ff;
 }
 
 /* sm */
@@ -645,7 +532,6 @@ hr::after {
 	.menu-social {
 		margin-top: 24px;
 	    padding-right: 20px;
-	    text-align: right;
 	}
 }
 
@@ -667,13 +553,6 @@ hr::after {
 .gridblock li,
 .gridblock p {
 	margin: 10px 0;
-}
-
-/*-----------------------------------------------
-## Alternates
------------------------------------------------*/
-.heading-alt {
-	font-size: 20px;
 }
 
 /*------------------------------------------------------------------------
@@ -727,31 +606,21 @@ hr::after {
 -----------------------------------------------*/
 /* Divider */
 .mod-divider {
-	border-top: 1px solid #a347ff;
 	margin: 4em 0;
 }
 .mod-divider p {
 	margin-top: -45px;
-	text-align: center;
-}
-.mod-divider a {
-	background: #fff;
-	color: #a347ff;
-	font-size: 60px;
 }
 
 /* Blockquote */
 .mod-blockquote {
-	border-left: 5px solid #a347ff;
 	padding-top: 2px;
 }
 .mod-blockquote p {
-	line-height: 28px;
 	padding-left: 15px;
 }
 
 /* First Letter of Paragraph */
-
 /* Style intentionally commented out in Wedge v1.0
  * Compatibility issues with Editor plugin in Chrome
  * Remove these comments to restore drop cap style
@@ -766,12 +635,7 @@ hr::after {
 /*-----------------------------------------------
 ## Alpha
 -----------------------------------------------*/
-.mod-alpha {
-	text-align: center;	
-}
 .mod-alpha img {
-    border: 3px solid #fff;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
 	margin-bottom: 30px;
 }
 .mod-alpha h3 {
@@ -781,29 +645,12 @@ hr::after {
 /*-----------------------------------------------
 ## Beta
 -----------------------------------------------*/
-.background-tertiary,
-.background-tertiary h2,
-.background-tertiary h3,
-.background-tertiary h5 {
-	color: #fff;
-}
-.mod-beta,
-.mod-beta p {
-	text-align: center;
-}
-.mod-beta img {
-	border: 3px solid #fff;
-}
 .mod-beta-1 {
-	background-color: #fff;
 	border-radius: 5px;
-	color: #1a1a1a;
 	margin: 10%;	
 	padding: 15px;
-	text-align: center;
 }
 .mod-beta-1:before {
-    border-bottom: 20px solid #fff;	
 	border-left: 12px solid transparent;
     border-right: 12px solid transparent;
 	content: "";
@@ -828,11 +675,7 @@ hr::after {
 /*-----------------------------------------------
 ## Home
 -----------------------------------------------*/
-.page-template-page_home h2 {
-	font-size: 42px;
-}
 .page-template-page_home .entry-footer {
-	background-color: #1a1a1a;
 	margin-left: -15px;
 	margin-right: -15px;
 }
@@ -845,29 +688,18 @@ hr::after {
 ------------------------------------------------------------------------*/
 .widget-title, 
 .page-title {
-    font-family: "Julius Sans One";
-    font-size: 40px;
 	margin-top: 50px;
 }
 .widget-area {
-    border: 1px solid #d9d9d9;
     list-style: none;	
 	margin-top: 25px;
     padding: 25px;
 }
 
 /* Comments */
-.comment-reply-title,
-.comments-title {
-    font-family: "Open Sans";
-    font-size: 24px;
-}
 .comment-form-comment label {
     float: left;
     padding-right: 15px;
-}
-.comments-area .comment-content p {
-	color: #1a1a1a;
 }
 
 /*------------------------------------------------------------------------
@@ -877,82 +709,23 @@ hr::after {
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-/* Buttons */
-.woocommerce #respond input#submit, 
-.woocommerce a.button,
-.woocommerce button.button, 
-.woocommerce input.button,
-.woocommerce p.buttons a.button,
-.woocommerce #respond input#submit.alt, 
-.woocommerce a.button.alt, 
-.woocommerce button.button.alt, 
-.woocommerce input.button.alt {
-    background-color: #a347ff;
-    color: #fff;
-}
-.woocommerce p.buttons a.button:hover,
-.woocommerce #respond input#submit.alt:hover, 
-.woocommerce a.button.alt:hover, 
-.woocommerce button.button.alt:hover,
-.woocommerce input.button.alt:hover,
-.woocommerce #respond input#submit:hover, 
-.woocommerce a.button:hover, 
-.woocommerce button.button:hover, 
-.woocommerce input.button:hover {
-	background-color: #d9d9d9;
-    color: #1a1a1a;
-    text-decoration: none;
-}
-.woocommerce ul.products li.product .price,
-.woocommerce div.product p.price, 
-.woocommerce div.product span.price {
-	color: #a347ff;
-}
 .woocommerce div.product {
 	margin-top: 40px;
 }
-.woocommerce span.onsale {
-    background-color: #a347ff;
-	color: #fff;
-}
 
 /* Product Page Tabs */
-.woocommerce div.product .woocommerce-tabs ul.tabs li a {
-    color: #1a1a1a;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li {
-    background-color: #d9d9d9;
-}	
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
-    color: #a347ff;
-}	
 .panel {
     background: transparent;
 	box-shadow: none;
 }	
 
-/* Messages */
-.woocommerce .woocommerce-message::before,
-.woocommerce .woocommerce-info::before {
-	color: #a347ff;
-}
-.woocommerce .woocommerce-message,
-.woocommerce .woocommerce-info {
-    border-top-color: #a347ff;
-}
-
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
-.site-footer {
-	background-color: #1a1a1a;
-}
 .site-footer p,
 .site-info,
 .attribution {
-	color: #fff;
 	margin-top: 10px;
-	text-align: center;
 }
 .site-info {
 	margin-bottom: -10px;
