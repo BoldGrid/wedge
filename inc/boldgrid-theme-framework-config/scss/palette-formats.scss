@@ -28,7 +28,7 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
 		color: $palette-primary_1;
 	}
-	hr {	
+	hr {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -51,22 +51,22 @@
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
 	    background-color: $palette-primary_1;
-	}	
-	.navbar-default .navbar-toggle, 
-	.navbar-default .navbar-toggle:hover, 
+	}
+	.navbar-default .navbar-toggle,
+	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus {
 		background-color: $text-contrast-palette-primary_1;
-	}	
+	}
 	.mod-divider {
 		border-top: 1px solid $palette-primary_1;
-	}	
+	}
 	.mod-blockquote {
 		border-left: 5px solid $palette-primary_1;
-	}	
+	}
 	hr::after {
 	    border-top: 8px solid $palette-primary_1;
 	}
-	
+
 
 	/* xs */
 	.navbar-default .navbar-nav > li > a:hover,
@@ -84,8 +84,8 @@
 		.navbar-default .navbar-nav > .active > a,
 		.navbar-default .navbar-nav > .active > a:hover,
 		.navbar-default .navbar-nav > .active > a:focus,
-		.navbar-default .navbar-nav > .open > a, 
-		.navbar-default .navbar-nav > .open > a:hover, 
+		.navbar-default .navbar-nav > .open > a,
+		.navbar-default .navbar-nav > .open > a:hover,
 		.navbar-default .navbar-nav > .open > a:focus,
 		.navbar-default .navbar-nav > .current-menu-parent > a {
 			border-bottom: 3px solid $palette-primary_1;
@@ -100,7 +100,7 @@
 	.site-footer,
 	.dropdown-menu,
 	#tertiary-menu,
-	.page-template-page_home .entry-footer {
+	.page-template-home .entry-footer {
 		background-color: $palette-primary_2;
 	}
 	.mod-alpha h3,
@@ -161,14 +161,14 @@
 	.background-secondary,
 	.background-secondary::before,
 	.background-secondary::after,
-	a.button:hover, 
-	button.button:hover, 
+	a.button:hover,
+	button.button:hover,
 	input.button:hover,
 	a.button.alt:hover,
 	p.buttons a.button:hover,
-	button.button.alt:hover, 
+	button.button.alt:hover,
 	input.button.alt:hover,
-	#respond input#submit.alt:hover, 
+	#respond input#submit.alt:hover,
 	#respond input#submit:hover {
 		background-color: $palette-primary_3;
 	}
@@ -250,7 +250,7 @@
 	}
 	.mod-divider a {
 		background: $palette-primary-neutral-color;
-	}	
+	}
 	.mod-beta img {
 	    border: 3px solid $palette-primary-neutral-color;
 	}
@@ -282,7 +282,7 @@
 	.woocommerce-message::before,
 	.woocommerce-info::before,
 	.woocommerce ul.products li.product .price,
-	.woocommerce div.product p.price, 
+	.woocommerce div.product p.price,
 	.woocommerce div.product span.price,
 	.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
 		color: $palette-primary_1;
@@ -293,14 +293,14 @@
 	div.product .woocommerce-tabs ul.tabs li {
 		background-color: $palette-primary_3;
 	}
-	.woocommerce #respond input#submit, 
+	.woocommerce #respond input#submit,
 	.woocommerce a.button,
-	.woocommerce button.button, 
+	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button,
-	.woocommerce #respond input#submit.alt, 
-	.woocommerce a.button.alt, 
-	.woocommerce button.button.alt, 
+	.woocommerce #respond input#submit.alt,
+	.woocommerce a.button.alt,
+	.woocommerce button.button.alt,
 	.woocommerce input.button.alt,
 	.woocommerce span.onsale {
 	    background-color: $palette-primary_1;
@@ -311,13 +311,13 @@
 	    border-top-color: $palette-primary_1;
 	}
 	.woocommerce p.buttons a.button:hover,
-	.woocommerce #respond input#submit.alt:hover, 
-	.woocommerce a.button.alt:hover, 
+	.woocommerce #respond input#submit.alt:hover,
+	.woocommerce a.button.alt:hover,
 	.woocommerce button.button.alt:hover,
 	.woocommerce input.button.alt:hover,
-	.woocommerce #respond input#submit:hover, 
-	.woocommerce a.button:hover, 
-	.woocommerce button.button:hover, 
+	.woocommerce #respond input#submit:hover,
+	.woocommerce a.button:hover,
+	.woocommerce button.button:hover,
 	.woocommerce input.button:hover {
 		background-color: $palette-primary_3;
 	    color: $palette-primary_2;
@@ -339,7 +339,7 @@
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
-.page-template-page_home.palette-primary .entry-footer {
+.page-template-home.palette-primary .entry-footer {
 	background-color: $palette-primary_4;
 }
 .disabled-footer .site-footer {
