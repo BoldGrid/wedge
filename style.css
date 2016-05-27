@@ -187,10 +187,7 @@ input[type="submit"]:focus {
 .tagline {
 	line-height: 1.6em;
 }
-#site-navigation {
-	font-weight: 400;
-	text-transform: uppercase;
-}
+#site-navigation,
 #secondary-menu a,
 #menu-social a {
 	text-transform: uppercase;
@@ -495,9 +492,6 @@ hr::after {
 #tertiary-menu li {
 	padding: 0 5px;
 }
-.boldgrid-framework-menu li::after {
-	content: none;
-}
 .footer-center-items li::after,
 .boldgrid-framework-menu li::after {
 	content: "";
@@ -506,29 +500,6 @@ hr::after {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-.menu-social {
-	padding: 0;
-}
-.menu-social ul {
-	padding-left: 0;
-}
-.menu-social li {
-	display: inline;
-	list-style: none;
-	padding-right: 10px;
-}
-#menu-social ul {
-	padding-left: 0;
-}
-#menu-social ul li {
-	display:  inline-block;
-	position: relative;
-}
-#menu-social li a {
-	display: inline-block;
-}
-
-/* sm */
 @media (min-width: 768px) {
 	.menu-social {
 		margin-top: 24px;
