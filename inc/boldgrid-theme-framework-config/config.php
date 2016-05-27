@@ -28,26 +28,20 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'1' => array( '[menu]tertiary' ),
-		'5' => array( '[menu]secondary' ),
-		'8' => array( '[action]boldgrid_site_identity', '[action]boldgrid_primary_navigation' ),
+		'6' => array( '[action]boldgrid_site_identity' ),
+		'7' => array( '[menu]social' ),
+		'11' => array( '[action]boldgrid_primary_navigation' ),
 	);
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[menu]social' ),
-		'5' => array( '[menu]footer_center' ),
-		'8' => array( '[widget]boldgrid-widget-3' ),
-		'11' => array( '[action]boldgrid_display_attribution_links' ),
+		'1' => array( '[menu]footer_center' ),
+		'5' => array( '[widget]boldgrid-widget-3' ),
+		'8' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
 	// Set the Call To Action Widget to be on Home Page Only.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
-
-	// Remove Container ID that is targetted by navbar-toggle.
-	$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
-
-	// Remove the container classes that are targetted with navbar-collapse.
-	$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu text-center';
 
 	// Enable BoldGrid Color Palette System.
 	$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;

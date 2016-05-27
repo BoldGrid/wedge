@@ -126,19 +126,19 @@ body {
   	font-weight: 400;
 }
 h2 {
-  	font-weight: 400;	
+  	font-weight: 400;
 }
 h3 {
 	font-weight: 600;
 }
 h4 {
-  	font-weight: 400;	
+  	font-weight: 400;
 }
 h5 {
 	font-weight: 800;
 }
 h6 {
-  	font-weight: 400;	
+  	font-weight: 400;
 }
 .entry-title:first-letter {
     font-size: 200%;
@@ -199,7 +199,7 @@ input[type="submit"]:focus {
     text-align: center;
 }
 .menu-social {
-	text-align: center;	
+	text-align: center;
 }
 #menu-social li a {
 	text-align: right;
@@ -209,13 +209,13 @@ input[type="submit"]:focus {
 	text-align: center;
 }
 .woocommerce p.buttons a.button:hover,
-.woocommerce #respond input#submit.alt:hover, 
-.woocommerce a.button.alt:hover, 
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover,
-.woocommerce #respond input#submit:hover, 
-.woocommerce a.button:hover, 
-.woocommerce button.button:hover, 
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
 .woocommerce input.button:hover {
     text-decoration: none;
 }
@@ -346,7 +346,7 @@ input[type="submit"] {
 -----------------------------------------------*/
 hr {
 	border: 0;
-	height: 2px;	
+	height: 2px;
 	margin: 0 0 30px 0;
 }
 hr::after {
@@ -455,12 +455,12 @@ hr::after {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .current-menu-parent > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -498,7 +498,7 @@ hr::after {
 .boldgrid-framework-menu li::after {
 	content: none;
 }
-.footer-center-items li::after, 
+.footer-center-items li::after,
 .boldgrid-framework-menu li::after {
     content: "";
 }
@@ -507,7 +507,7 @@ hr::after {
 ## Social Menus
 -----------------------------------------------*/
 .menu-social {
-	padding: 0;	
+	padding: 0;
 }
 .menu-social ul {
 	padding-left: 0;
@@ -543,14 +543,14 @@ hr::after {
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-.gridblock h1, 
-.gridblock h2, 
-.gridblock h3, 
-.gridblock h4, 
-.gridblock h5, 
+.gridblock h1,
+.gridblock h2,
+.gridblock h3,
+.gridblock h4,
+.gridblock h5,
 .gridblock h6,
-.gridblock ol, 
-.gridblock ul, 
+.gridblock ol,
+.gridblock ul,
 .gridblock li,
 .gridblock p {
 	margin: 10px 0;
@@ -596,7 +596,7 @@ hr::after {
 .image-gallery img,
 .video-gallery img,
 .slideshow-gallery img {
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 }
 .mod-img-circle img {
 	border-radius: 50%;
@@ -648,7 +648,7 @@ hr::after {
 -----------------------------------------------*/
 .mod-beta-1 {
 	border-radius: 5px;
-	margin: 10%;	
+	margin: 10%;
 	padding: 15px;
 }
 .mod-beta-1:before {
@@ -665,7 +665,7 @@ hr::after {
 /* sm */
 @media (min-width: 768px) {
 	.mod-beta-1 {
-		margin-top: 15%;	
+		margin-top: 15%;
 	}
 }
 
@@ -687,12 +687,12 @@ hr::after {
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-title, 
+.widget-title,
 .page-title {
 	margin-top: 50px;
 }
 .widget-area {
-    list-style: none;	
+    list-style: none;
 	margin-top: 25px;
     padding: 25px;
 }
@@ -718,7 +718,7 @@ hr::after {
 .panel {
     background: transparent;
 	box-shadow: none;
-}	
+}
 
 /*------------------------------------------------------------------------
 # Footer
@@ -738,7 +738,12 @@ hr::after {
 .footer-center-items li a {
 	padding: 5px;
 }
-.attribution {
+#colophon .boldgrid-widget {
+	margin-top: 30px;
+}
+.attribution-theme-mods {
+	display: block;
+	text-align: center;
 	padding-bottom: 30px;
 }
 
@@ -767,5 +772,5 @@ body,
 #boldgrid-sticky-wrap {
   height: auto !important;
   height: 100%;
-  min-height: 100%; 
+  min-height: 100%;
 }
