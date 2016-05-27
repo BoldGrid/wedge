@@ -50,7 +50,7 @@
 	.navbar-default .navbar-toggle .icon-bar,
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
-	    background-color: $palette-primary_1;
+		background-color: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle,
 	.navbar-default .navbar-toggle:hover,
@@ -64,7 +64,7 @@
 		border-left: 5px solid $palette-primary_1;
 	}
 	hr::after {
-	    border-top: 8px solid $palette-primary_1;
+		border-top: 8px solid $palette-primary_1;
 	}
 
 
@@ -89,7 +89,7 @@
 		.navbar-default .navbar-nav > .open > a:focus,
 		.navbar-default .navbar-nav > .current-menu-parent > a {
 			border-bottom: 3px solid $palette-primary_1;
-		  	color: $text-contrast-palette-primary_2;
+			color: $text-contrast-palette-primary_2;
 		}
 	}
 
@@ -189,7 +189,7 @@
 		color: $palette-primary_3;
 	}
 	.widget-area {
-	    border: 1px solid $palette-primary_3;
+		border: 1px solid $palette-primary_3;
 	}
 
 	/*-----------------------------------------------
@@ -199,7 +199,7 @@
 	.background-tertiary::before,
 	.background-tertiary::after,
 	.call-to-action .button-primary {
-	    background-color: $palette-primary_4;
+		background-color: $palette-primary_4;
 	}
 	.background-tertiary,
 	.background-tertiary h2,
@@ -252,32 +252,32 @@
 		background: $palette-primary-neutral-color;
 	}
 	.mod-beta img {
-	    border: 3px solid $palette-primary-neutral-color;
+		border: 3px solid $palette-primary-neutral-color;
 	}
 	.mod-beta-1::before {
-    	border-bottom: 20px solid $palette-primary-neutral-color;
-    }
-    h1,
+		border-bottom: 20px solid $palette-primary-neutral-color;
+	}
+	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6,
-    .background-primary h2 {
-    	color: $text-contrast-palette-primary-neutral-color;
-    }
-    .mod-beta-1 {
-	    background-color: $palette-primary-neutral-color;
-	    color: $text-contrast-palette-primary-neutral-color;
-    }
+	.background-primary h2 {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.mod-beta-1, &.page-template-default .site-content {
+		background-color: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
 
-    /*-----------------------------------------------
+	/*-----------------------------------------------
 	## Et Cetera
 	-----------------------------------------------*/
 	.mod-alpha img {
 		border: 3px solid #fff;
-	    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
-    }
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
+	}
 	/* WooCommerce */
 	.woocommerce-message::before,
 	.woocommerce-info::before,
@@ -303,12 +303,12 @@
 	.woocommerce button.button.alt,
 	.woocommerce input.button.alt,
 	.woocommerce span.onsale {
-	    background-color: $palette-primary_1;
-	    color: $text-contrast-palette-primary_1;
+		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 	.woocommerce .woocommerce-message,
 	.woocommerce .woocommerce-info {
-	    border-top-color: $palette-primary_1;
+		border-top-color: $palette-primary_1;
 	}
 	.woocommerce p.buttons a.button:hover,
 	.woocommerce #respond input#submit.alt:hover,
@@ -320,7 +320,7 @@
 	.woocommerce button.button:hover,
 	.woocommerce input.button:hover {
 		background-color: $palette-primary_3;
-	    color: $palette-primary_2;
+		color: $palette-primary_2;
 	}
 
 	/* Call to Action */
