@@ -1,10 +1,10 @@
 /*
 Theme Name: Wedge
 Author: The BoldGrid Team
-Theme URI: http://www.boldgrid.com/wedge
-Author URI: http://www.boldgrid.com/the-team
+Theme URI: https://www.boldgrid.com/wedge
+Author URI: https://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.8
+Version: 1.10
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-wedge
@@ -29,14 +29,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBLocks
 	## Positioning
-	## Alternates
 # Modules
 	## Universal
 	## Global
 	## Alpha
 	## Beta
-	## Gamma
 # Pages
+	## Home
 # Posts
 # Plugins
 	## WooCommerce
@@ -50,15 +49,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-/* Container Fluid */
 .entry-content > .container-fluid {
 	margin-left: -15px;
 	margin-right: -15px;
@@ -121,92 +111,36 @@ p {
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-body {
-  	font-weight: 400;
-}
-h2 {
-  	font-weight: 400;	
-}
-h3 {
-	font-weight: 600;
-}
-h4 {
-  	font-weight: 400;	
-}
-h5 {
-	font-weight: 800;
-}
-h6 {
-  	font-weight: 400;	
-}
 .entry-title:first-letter {
     font-size: 200%;
 }
-.link-secondary {
-	text-decoration: none;
+h3,
+h5 {
+	font-weight: bold;
 }
-a:hover,
-a:focus,
-.link-primary:hover,
-.link-primary:focus,
-.link-secondary:hover,
-.link-secondary:focus {
-	text-decoration: none;
-}
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	text-transform: none;
-}
-.button-primary:hover,
-.button-primary:focus,
-.button-secondary:hover,
-.button-secondary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-	text-decoration: none;
-}
-.call-to-action .button-primary {
-	text-transform: none;
+.slogan {
+  	word-wrap: break-word;
 }
 .p-button-primary,
 .p-button-secondary {
 	white-space: nowrap;
 }
-.site-title {
-	font-weight: 300;
-}
-.site-description {
-	font-weight: 400;
-}
-.slogan {
-  	font-weight: 400;
-  	word-wrap: break-word;
-}
-.tagline {
-	line-height: 1.6em;
-}
-#site-navigation {
-	font-weight: 400;
-	text-transform: uppercase;
-}
-#secondary-menu a,
-#menu-social a {
-    text-transform: uppercase;
-}
-#secondary-menu {
-    text-align: center;
-}
-.menu-social {
-	text-align: center;	
-}
 #menu-social li a {
-	text-align: right;
 	-webkit-font-smoothing: antialiased;
 }
-.mod-divider p {
-	text-align: center;
-}
+a:hover,
+a:focus,
+.link-primary:hover,
+.link-primary:focus,
+.link-secondary,
+.link-secondary:hover,
+.link-secondary:focus,
+.button-primary:hover,
+.button-primary:focus,
+.button-secondary:hover,
+.button-secondary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
 .woocommerce p.buttons a.button:hover,
 .woocommerce #respond input#submit.alt:hover, 
 .woocommerce a.button.alt:hover, 
@@ -216,49 +150,32 @@ input[type="submit"]:focus {
 .woocommerce a.button:hover, 
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
+#secondary-menu,
+.menu-social,
+.mod-alpha,
+.mod-alpha p,
+.mod-beta,
+.mod-beta p,
+.mod-divider p,
 .site-footer p,
 .site-info,
 .attribution {
 	text-align: center;
 }
+#menu-social li a {
+	text-align: right;
+}
 
 /* xs */
 .site-title,
-.site-description {
-	text-align: center;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.site-title,
-	.site-description  {
-		text-align: left;
-	}
-}
-
-/* xs */
+.site-description,
 .xs-center,
 .mod-img,
 .mod-img-circle,
 .p-button-primary,
-.p-button-secondary {
-	text-align: center;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.xs-center,
-	.mod-img,
-	.mod-img-circle,
-	.p-button-primary,
-	.p-button-secondary {
-		text-align: left;
-	}
-}
-
-/* xs */
+.p-button-secondary,
 .navbar-default .navbar-nav,
 .navbar-default .navbar-nav .open .dropdown-menu {
 	text-align: center;
@@ -270,12 +187,21 @@ input[type="submit"]:focus {
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
 	}
-}
-
-/* sm */
-@media (min-width: 768px) {
 	.menu-social {
 	    text-align: right;
+	}
+}
+
+/* md */
+@media (min-width: 992px) {
+	.site-title,
+	.site-description,
+	.xs-center,
+	.mod-img,
+	.mod-img-circle,
+	.p-button-primary,
+	.p-button-secondary {
+		text-align: left;
 	}
 }
 
@@ -289,7 +215,7 @@ input[type="submit"]:focus {
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
-/* Removes Blue Box in Chrome */
+/* Removes blue box in Chrome */
 *:focus {
 	outline: 0;
 }
@@ -421,7 +347,6 @@ hr::after {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Nav Reset */
 .navbar {
 	background-color: none;
 	border: none;
@@ -604,18 +529,17 @@ hr::after {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-/* Divider */
 .mod-divider {
 	margin: 4em 0;
 }
 .mod-divider p {
 	margin-top: -45px;
 }
-
-/* Blockquote */
+blockquote,
 .mod-blockquote {
 	padding-top: 2px;
 }
+blockquote p,
 .mod-blockquote p {
 	padding-left: 15px;
 }

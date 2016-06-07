@@ -120,15 +120,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Headings
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Julius Sans One';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
 	// Typography Alternate Headings
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Open Sans';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
-
-	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
 
 	// Typography Navigation
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Open Sans';
@@ -139,6 +137,36 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+
+	// Typography Tagline Classes
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h5 alt-font';
+
+	// Typography Relationships
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-page_home h2' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.0, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h3' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.75, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default h4' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.45, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h5' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.0, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h6' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 0.9, 
+	);
 
 	// Icons
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
