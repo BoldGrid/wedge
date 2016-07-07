@@ -100,7 +100,7 @@
 	.site-footer,
 	.dropdown-menu,
 	#tertiary-menu,
-	.page-template-home .entry-footer {
+	.page-template-page_home .entry-footer {
 		background-color: $palette-primary_2;
 	}
 	.mod-alpha h3,
@@ -339,7 +339,7 @@
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
-.page-template-home.palette-primary .entry-footer {
+.page-template-page_home.palette-primary .entry-footer {
 	background-color: $palette-primary_4;
 }
 .disabled-footer .site-footer {
