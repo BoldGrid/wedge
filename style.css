@@ -512,10 +512,11 @@ hr::after {
 	margin-top: -45px;
 }
 
-/* Blockquote */
+blockquote,
 .mod-blockquote {
 	padding-top: 2px;
 }
+blockquote p,
 .mod-blockquote p {
 	padding-left: 15px;
 }
