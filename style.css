@@ -30,7 +30,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBlocks
 	## Positioning
-	## Alternates
+	## Et Cetera
 # Modules
 	## Universal
 	## Global
@@ -51,15 +51,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-/* Container Fluid */
 .entry-content > .container-fluid {
 	margin-left: -15px;
 	margin-right: -15px;
@@ -77,14 +68,12 @@ body,
 }
 .entry-content > .container-fluid::before {
 	left: -20px;
-	/* Skew */
 	-webkit-transform: skew(40deg);
 	-ms-transform: skew(40deg);
 	transform: skew(40deg);
 }
 .entry-content > .container-fluid::after {
 	right: -20px;
-	/* Skew */
 	-webkit-transform: skew(-40deg);
 	-ms-transform: skew(-40deg);
 	transform: skew(-40deg);
