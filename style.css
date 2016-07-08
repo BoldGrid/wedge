@@ -521,18 +521,6 @@ blockquote p,
 	padding-left: 15px;
 }
 
-/* First Letter of Paragraph */
-/* Style intentionally commented out in Wedge v1.0
- * Compatibility issues with Editor plugin in Chrome
- * Remove these comments to restore drop cap style
-
-.mod-first-letter > p::first-letter {
-    float: left;
-    font-size: 600%;
-    line-height: 0.75;
-    margin-bottom: 1px;
-}
-
 /*-----------------------------------------------
 ## Alpha
 -----------------------------------------------*/
