@@ -574,16 +574,3 @@ blockquote p,
 	margin-bottom: -15px;
 	padding-bottom: 15px;
 }
-
-/* Sticky Footer */
-html,
-body,
-.site,
-.site-content {
-	height: 100%;
-}
-#boldgrid-sticky-wrap {
-	height: auto !important;
-	height: 100%;
-	min-height: 100%;
-}
