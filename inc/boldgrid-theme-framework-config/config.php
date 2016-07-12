@@ -172,6 +172,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
 	// Menu Locations.
+	$boldgrid_framework_configs['menu']['locations']['social'] = 'Header Upper Right';
+	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Above Header';
+	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Footer Left';
 	$boldgrid_framework_configs['menu']['footer_menus'][] = 'tertiary';
 
 	/**
