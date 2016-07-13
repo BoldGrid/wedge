@@ -219,7 +219,7 @@ add_filter( 'boldgrid_theme_framework_config', 'boldgrid_theme_framework_config'
 /**
  * Site Title & Logo Controls
  */
-function filter_logo_controls( $controls ) {
+function boldgrid_filter_logo_controls( $controls ) {
 	$controls['logo_font_family']['default'] = 'Julius Sans One';
 	$controls['logo_font_size']['default'] = 44;
 	$controls['logo_margin_top']['default'] = 20;
@@ -227,22 +227,22 @@ function filter_logo_controls( $controls ) {
 
 	return $controls;
 }
-add_filter( 'kirki/fields', 'filter_logo_controls' );
+add_filter( 'kirki/fields', 'boldgrid_filter_logo_controls' );
 /**
  * Open a div for the background on single posts.
  */
-function single_background_open() {
+function boldgrid_single_background_open() {
 	if ( is_single() ) { ?>
 		<div class="row background-primary">
 	<?php }
 }
-add_filter( 'boldgrid_content_before', 'single_background_open' );
+add_filter( 'boldgrid_content_before', 'boldgrid_single_background_open' );
 /**
  * Close the div for single posts.
  */
-function single_background_close() {
+function boldgrid_single_background_close() {
 	if ( is_single() ) { ?>
 		</div>
 	<?php }
 }
-add_filter( 'boldgrid_content_after', 'single_background_close' );
+add_filter( 'boldgrid_content_after', 'boldgrid_single_background_close' );
