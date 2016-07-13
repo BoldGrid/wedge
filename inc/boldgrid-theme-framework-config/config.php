@@ -225,3 +225,21 @@ function filter_logo_controls( $controls ) {
 	return $controls;
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
+/**
+ * Open a div for the background on single posts.
+ */
+function single_background_open() {
+	if ( is_single() ) { ?>
+		<div class="row background-primary">
+	<?php }
+}
+add_filter( 'boldgrid_content_before', 'single_background_open' );
+/**
+ * Site Title & Logo Controls
+ */
+function single_background_close() {
+	if ( is_single() ) { ?>
+		</div>
+	<?php }
+}
+add_filter( 'boldgrid_content_after', 'single_background_close' );
