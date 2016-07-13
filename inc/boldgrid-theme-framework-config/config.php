@@ -235,7 +235,7 @@ function single_background_open() {
 }
 add_filter( 'boldgrid_content_before', 'single_background_open' );
 /**
- * Site Title & Logo Controls
+ * Close the div for single posts.
  */
 function single_background_close() {
 	if ( is_single() ) { ?>
