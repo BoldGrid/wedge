@@ -40,7 +40,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'8' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
-	// Give page_home.php a fluid container.
+	// No container is needed on home page for this theme.
 	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = '';
 
 	// Set the Call To Action Widget to be on Home Page Only.
