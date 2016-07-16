@@ -41,7 +41,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	);
 
 	// Give page_home.php a fluid container.
-	$boldgrid_framework_configs['template']['pages']['page_home.php']['container_class'] = 'container-fluid';
+	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = '';
 
 	// Set the Call To Action Widget to be on Home Page Only.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';

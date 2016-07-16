@@ -46,28 +46,28 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-.entry-content > .container-fluid {
+.entry-content > .bgtfw > .container-fluid {
 	margin-left: -15px;
 	margin-right: -15px;
 	padding: 70px 0 150px 0;
 	position: relative;
 	z-index: 100;
 }
-.entry-content > .container-fluid::before,
-.entry-content > .container-fluid::after {
+.entry-content > .bgtfw > .container-fluid::before,
+.entry-content > .bgtfw > .container-fluid::after {
 	content: "";
 	height: 50px;
 	position: absolute;
 	top: -50px;
 	width: 50%;
 }
-.entry-content > .container-fluid::before {
+.entry-content > .bgtfw > .container-fluid::before {
 	left: -20px;
 	-webkit-transform: skew(40deg);
 	-ms-transform: skew(40deg);
 	transform: skew(40deg);
 }
-.entry-content > .container-fluid::after {
+.entry-content > .bgtfw > .container-fluid::after {
 	right: -20px;
 	-webkit-transform: skew(-40deg);
 	-ms-transform: skew(-40deg);
@@ -75,13 +75,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 }
 
 /* xs */
-.entry-content > .container-fluid:last-child {
+.entry-content > .bgtfw > .container-fluid:last-child {
 	padding-bottom: 0;
 }
 
 /* md */
 @media (min-width: 992px) {
-	.entry-content > .container-fluid:last-child {
+	.entry-content > .bgtfw > .container-fluid:last-child {
 		padding-bottom: 75px;
 	}
 }
