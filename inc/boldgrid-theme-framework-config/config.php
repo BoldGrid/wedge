@@ -27,7 +27,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]secondary', '[menu]tertiary' ),
+		'1' => array( '[menu]secondary' ),
 		'6' => array( '[action]boldgrid_site_identity' ),
 		'7' => array( '[menu]social' ),
 		'11' => array( '[action]boldgrid_primary_navigation' ),
@@ -35,8 +35,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[menu]footer_center' ),
-		'5' => array( '[widget]boldgrid-widget-3' ),
+		'1' => array( '[menu]tertiary' ),
+		'5' => array( '[widget]boldgrid-widget-3', '[menu]footer_center' ),
 		'8' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
@@ -184,16 +184,18 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * Widgets
 	 */
 	$widget_markup['call-to-action'] = <<<HTML
-		<div class="row call-to-action-wrapper">
-			<div class="col-md-7"></div>
-			<div class="col-md-5">
-				<div class="call-to-action">
-					<h2 class="slogan">$slogan</h2>
-					<hr />
-					<p class="tagline">$tagline</p>
-					<p class="p-button-primary">
-						<a class="button-primary" href="contact-us">CONTACT US TODAY</a>
-					</p>
+		<div class="container">
+			<div class="row call-to-action-wrapper">
+				<div class="col-md-7"></div>
+				<div class="col-md-5">
+					<div class="call-to-action">
+						<h2 class="slogan">$slogan</h2>
+						<hr />
+						<p class="tagline">$tagline</p>
+						<p class="p-button-primary">
+							<a class="button-primary" href="contact-us">CONTACT US TODAY</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
