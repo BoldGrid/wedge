@@ -335,6 +335,12 @@
 			background: none;
 		}
 	}
+	&.error404 {
+		.site-content {
+			background: $palette-primary-neutral-color;
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+	}
 }
 
 /*------------------------------------------------------------------------
