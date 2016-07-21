@@ -25,6 +25,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
+	// Add container to call to action widget.
+	$boldgrid_framework_configs['template']['pages']['global']['call-to-action'] = 'container';
+
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
 		'1' => array( '[menu]secondary' ),
@@ -184,18 +187,16 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * Widgets
 	 */
 	$widget_markup['call-to-action'] = <<<HTML
-		<div class="container">
-			<div class="row call-to-action-wrapper">
-				<div class="col-md-7"></div>
-				<div class="col-md-5">
-					<div class="call-to-action">
-						<h2 class="slogan">$slogan</h2>
-						<hr />
-						<p class="tagline">$tagline</p>
-						<p class="p-button-primary">
-							<a class="button-primary" href="contact-us">CONTACT US TODAY</a>
-						</p>
-					</div>
+		<div class="row call-to-action-wrapper">
+			<div class="col-md-7"></div>
+			<div class="col-md-5">
+				<div class="call-to-action">
+					<h2 class="slogan">$slogan</h2>
+					<hr />
+					<p class="tagline">$tagline</p>
+					<p class="p-button-primary">
+						<a class="button-primary" href="contact-us">CONTACT US TODAY</a>
+					</p>
 				</div>
 			</div>
 		</div>
