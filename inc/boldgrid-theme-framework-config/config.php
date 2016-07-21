@@ -203,7 +203,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 HTML;
 
 	// Widget 2.
-	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array(
+	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-2'][] = array(
 		'title' => 'Call To Action',
 		'text' => $widget_markup['call-to-action'],
 		'type' => 'visual',
@@ -212,8 +212,8 @@ HTML;
 	);
 
 	// Name Widget Areas.
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Above Site Title';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Call To Action';
 
 	return $boldgrid_framework_configs;
 }
