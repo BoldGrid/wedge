@@ -492,6 +492,11 @@ blockquote p,
 .error404 .jumbotron {
 	background-color: transparent;
 }
+/* Search Page */
+.search .jumbotron {
+	text-align: center;
+	background: none;
+}
 /*-----------------------------------------------
 ## Home
 -----------------------------------------------*/
