@@ -155,7 +155,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Julius Sans One';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 17;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
 	// Typography Alternate Headings.
