@@ -264,7 +264,9 @@
 	h4,
 	h5,
 	h6,
-	.background-primary h2 {
+	.background-primary h2,
+	.posted-on,
+	.byline {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.mod-beta-1,
