@@ -28,7 +28,9 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
 		color: $palette-primary_1;
 	}
-	hr {
+	hr,
+	.nav > li > a:focus,
+	.nav > li > a:hover {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
