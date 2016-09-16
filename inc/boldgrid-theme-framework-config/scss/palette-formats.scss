@@ -275,6 +275,7 @@
 	&.page-template-default .site-content,
 	&.single .site-content,
 	&.search .site-content,
+	&.blog .site-content,
 	&.archive .site-content {
 		background-color: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
