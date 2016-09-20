@@ -110,28 +110,18 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Override Options per Subcategory.
 	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Consulting':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$slogan = 'WE MAKE IT OUR BUSINESS TO HELP YOUR BUSINESS SUCCEED';
+			$tagline = 'There comes a time when every expanding business requires the help of a consulting firm to minimize growing pains. We build organic relationships with all of our clients to ensure custom solutions are met without sacrificing the personality of their businesses.';
+			break;
 		case 'Design':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
 			$slogan = 'MAKE A STATEMENT. ALLOW US TO DESIGN A PRESENCE FOR YOU TODAY';
 			$tagline = 'As neighboring businesses grow, making your presence known becomes more and more crucial everyday. We design pieces that will encourage pedestrian interest in your venue. Take the opportunity to express your business and capitalize on the traffic that it deserves.';
 			break;
-		case 'Home Repair':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
-			$slogan = 'A MORE BEAUTIFUL HOME AWAITS YOU. GIVE US A CALL TODAY';
-			$tagline = 'We believe that every home is capable of being a dream home, given enough love and commitment, of course. Don\'t waste any more time or money figuring out what that bedroom of yours is missing. Contact us and let us apply our expertise today.';
-			break;
-		case 'Real Estate':
+		case 'Fitness':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
-			$slogan = 'WE GO BEYOND THE SALE TO GIVE YOU A LASTING SERVICE';
-			$tagline = 'It\'s our belief that a realtor\'s work is never quite done. We maintain our projects for several years after closings to ensure that your new home is everything you\'d expect. Your long-lasting satisfaction is always our end-goal.';
-			break;
-		case 'Consulting':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
-			$slogan = 'WE MAKE IT OUR BUSINESS TO HELP YOUR BUSINESS SUCCEED';
-			$tagline = 'There comes a time when every expanding business requires the help of a consulting firm to minimize growing pains. We build organic relationships with all of our clients to ensure custom solutions are met without sacrificing the personality of their businesses.';
-			break;
-		case 'Marketing':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			$slogan = 'LET US EXPAND YOUR HORIZONS';
 			$tagline = 'Are you ready to make a change? We\'re waiting for you. As a company that prides itself in meeting customer marketing needs, we can ensure that you get what you\'re looking for quickly and for a great price. Don\'t delay getting what you need from a company that cares about its customers.';
 			break;
@@ -139,6 +129,26 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
 			$slogan = 'GET CONTENT THAT ACTUALLY REFLECTS WHAT YOU DO';
 			$tagline = 'We pride ourselves in employing content writers from every industry. With our services you\'re guaranteed to have content written for you that directly represents the services that your business provides. Contact us today and see what our experts can do for you.';
+			break;
+		case 'Home Repair':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$slogan = 'A MORE BEAUTIFUL HOME AWAITS YOU. GIVE US A CALL TODAY';
+			$tagline = 'We believe that every home is capable of being a dream home, given enough love and commitment, of course. Don\'t waste any more time or money figuring out what that bedroom of yours is missing. Contact us and let us apply our expertise today.';
+			break;
+		case 'Marketing':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$slogan = 'LET US EXPAND YOUR HORIZONS';
+			$tagline = 'Are you ready to make a change? We\'re waiting for you. As a company that prides itself in meeting customer marketing needs, we can ensure that you get what you\'re looking for quickly and for a great price. Don\'t delay getting what you need from a company that cares about its customers.';
+			break;
+		case 'Property Management':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			$slogan = 'LET US EXPAND YOUR HORIZONS';
+			$tagline = 'Are you ready to make a change? We\'re waiting for you. As a company that prides itself in meeting customer marketing needs, we can ensure that you get what you\'re looking for quickly and for a great price. Don\'t delay getting what you need from a company that cares about its customers.';
+			break;
+		case 'Real Estate':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			$slogan = 'WE GO BEYOND THE SALE TO GIVE YOU A LASTING SERVICE';
+			$tagline = 'It\'s our belief that a realtor\'s work is never quite done. We maintain our projects for several years after closings to ensure that your new home is everything you\'d expect. Your long-lasting satisfaction is always our end-goal.';
 			break;
 
 		// Default Behavior.
