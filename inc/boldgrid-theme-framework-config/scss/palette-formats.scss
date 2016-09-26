@@ -28,7 +28,9 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
 		color: $palette-primary_1;
 	}
-	hr {
+	hr,
+	.nav > li > a:focus,
+	.nav > li > a:hover {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -264,13 +266,16 @@
 	h4,
 	h5,
 	h6,
-	.background-primary h2 {
+	.background-primary h2,
+	.posted-on,
+	.byline {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.mod-beta-1,
 	&.page-template-default .site-content,
 	&.single .site-content,
 	&.search .site-content,
+	&.blog .site-content,
 	&.archive .site-content {
 		background-color: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
