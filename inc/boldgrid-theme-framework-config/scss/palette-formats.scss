@@ -90,6 +90,7 @@
 		.navbar-default .navbar-nav > .open > a:hover,
 		.navbar-default .navbar-nav > .open > a:focus,
 		.navbar-default .navbar-nav > .current-menu-parent > a {
+			background: $palette-primary_2;
 			border-bottom: 3px solid $palette-primary_1;
 			color: $text-contrast-palette-primary_2;
 		}
@@ -260,7 +261,9 @@
 		border-bottom: 20px solid $palette-primary-neutral-color;
 	}
 	h1,
-	h1 a,
+	h1.entry-title a,
+	h1.entry-title a:hover,
+	h1.entry-title a:focus,
 	h2,
 	h3,
 	h4,
