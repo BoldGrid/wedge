@@ -36,7 +36,8 @@
 		color: $text-contrast-palette-primary_1;
 	}
 	.button-primary,
-	input[type="submit"] {
+	input[type="submit"],
+	.pager li > a {
 		border: 2px solid $palette-primary_1;
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
@@ -63,7 +64,8 @@
 	.mod-divider {
 		border-top: 1px solid $palette-primary_1;
 	}
-	.mod-blockquote {
+	.mod-blockquote,
+	blockquote {
 		border-left: 5px solid $palette-primary_1;
 	}
 	hr::after {
@@ -237,7 +239,9 @@
 	.button-secondary:hover,
 	.button-secondary:focus,
 	input[type="submit"]:hover,
-	input[type="submit"]:focus {
+	input[type="submit"]:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		border: 2px solid $palette-primary_1;
 		background: none;
 		color: $palette-primary_1;
@@ -272,6 +276,7 @@
 	h5,
 	h6,
 	.background-primary h2,
+	.sidebar h2.widget-title,
 	.posted-on,
 	.byline {
 		color: $text-contrast-palette-primary-neutral-color;
