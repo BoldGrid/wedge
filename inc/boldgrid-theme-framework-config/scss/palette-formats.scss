@@ -71,7 +71,9 @@
 	hr::after {
 		border-top: 8px solid $palette-primary_1;
 	}
-
+	.panel-default {
+		border-color: $palette-primary_1;
+	}
 
 	/* xs */
 	.navbar-default .navbar-nav > li > a:hover,
@@ -286,7 +288,10 @@
 	&.single .site-content,
 	&.search .site-content,
 	&.blog .site-content,
-	&.archive .site-content {
+	&.archive .site-content,
+	.panel-default > .panel-heading,
+	.panel-body,
+	.panel-footer {
 		background-color: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
