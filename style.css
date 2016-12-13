@@ -280,11 +280,14 @@ hr::after {
 	min-height: 20px;
 	padding: 19px;
 }
+.well .table-striped > tbody > tr:nth-of-type(2n+1) {
+	background: transparent;
+}
 .hentry {
 	margin: 0;
 }
-.well .table-striped > tbody > tr:nth-of-type(2n+1) {
-	background: transparent;
+.hentry:first-child ~ .hentry {
+	margin-top: 50px;
 }
 
 /*------------------------------------------------------------------------
@@ -522,6 +525,9 @@ blockquote p,
 	list-style: none;
 	margin-top: 25px;
 	padding: 25px;
+}
+.nav-links {
+	margin: 25px 0;
 }
 
 /* Comments */
