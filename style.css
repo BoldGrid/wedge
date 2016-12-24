@@ -63,14 +63,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 }
 .entry-content > .bgtfw > .container-fluid::before {
 	left: -20px;
-	-webkit-transform: skew(40deg);
-	-ms-transform: skew(40deg);
 	transform: skew(40deg);
 }
 .entry-content > .bgtfw > .container-fluid::after {
 	right: -20px;
-	-webkit-transform: skew(-40deg);
-	-ms-transform: skew(-40deg);
 	transform: skew(-40deg);
 }
 
@@ -346,8 +342,6 @@ hr::after {
 	border: none;
 	min-height: 0;
 	/* Border Radius */
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
 }
 .navbar-default {
