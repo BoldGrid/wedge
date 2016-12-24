@@ -321,7 +321,7 @@ hr::after {
 /* md */
 @media (min-width: 992px) {
 	.call-to-action-wrapper {
-		background-color: none;
+		background-color: transparent;
 		margin-bottom: 0;
 	}
 	.call-to-action {
@@ -342,7 +342,7 @@ hr::after {
 -----------------------------------------------*/
 /* Nav Reset */
 .navbar {
-	background-color: none;
+	background-color: transparent;
 	border: none;
 	min-height: 0;
 	/* Border Radius */
