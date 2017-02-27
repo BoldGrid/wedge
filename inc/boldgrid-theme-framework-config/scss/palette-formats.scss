@@ -380,3 +380,7 @@
 .palette-primary.mce-content-body .background-primary {
 	background-color: $palette-primary-neutral-color;
 }
+.palette-primary.single {
+	background-color: $palette-primary-neutral-color;
+	background-image: none;
+}

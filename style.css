@@ -203,6 +203,14 @@ input[type="submit"]:focus,
 	display: none;
 }
 
+/* sm */
+@media (min-width: 768px) {
+	.archive .entry-title,
+	.single .entry-title {
+		margin-left: -12px;
+	}
+}
+
 /*-----------------------------------------------
 ## Buttons
 -----------------------------------------------*/
