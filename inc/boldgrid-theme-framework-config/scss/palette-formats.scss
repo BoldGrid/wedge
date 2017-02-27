@@ -259,7 +259,8 @@
 	#boldgrid-sticky-push {
 		background-color: $palette-primary-neutral-color;
 	}
-	.mod-divider a {
+	.mod-divider a,
+	&.custom-background.single {
 		background: $palette-primary-neutral-color;
 	}
 	.mod-beta img {
@@ -379,8 +380,4 @@
 .palette-primary.mce-content-body,
 .palette-primary.mce-content-body .background-primary {
 	background-color: $palette-primary-neutral-color;
-}
-.palette-primary.single {
-	background-color: $palette-primary-neutral-color;
-	background-image: none;
 }
