@@ -31,7 +31,9 @@
 	}
 	hr,
 	.nav > li > a:focus,
-	.nav > li > a:hover {
+	.nav > li > a:hover,
+	.mark,
+	mark {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -281,7 +283,8 @@
 	.background-primary h2,
 	.sidebar h2.widget-title,
 	.posted-on,
-	.byline {
+	.byline,
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.mod-beta-1,

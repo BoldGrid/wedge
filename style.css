@@ -538,6 +538,7 @@ blockquote p,
 	float: left;
 	padding-right: 15px;
 }
+.panel,
 .panel-default > .panel-heading {
 	border: none;
 }
@@ -560,6 +561,9 @@ blockquote p,
 .panel {
 	background: transparent;
 	box-shadow: none;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+	border: none;
 }
 
 /*------------------------------------------------------------------------
