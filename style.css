@@ -55,8 +55,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 }
 .entry-content > .bgtfw > .container-fluid::before,
 .entry-content > .bgtfw > .container-fluid::after {
-	height: 50px;
 	content: "";
+	height: 50px;
 	position: absolute;
 	top: -50px;
 	width: 50%;

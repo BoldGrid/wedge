@@ -40,8 +40,8 @@
 	.button-primary,
 	input[type="submit"],
 	.pager li > a {
-		border: 2px solid $palette-primary_1;
 		background: $palette-primary_1;
+		border: 2px solid $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
 	a.button,
@@ -227,8 +227,8 @@
 	}
 	.call-to-action .button-primary:hover,
 	.call-to-action .button-primary:focus {
-		border: none;
 		background-color: $text-contrast-palette-primary_4;
+		border: none;
 		color: $palette-primary_4;
 	}
 	.mod-beta {
@@ -246,8 +246,8 @@
 	input[type="submit"]:focus,
 	.pager li > a:hover,
 	.pager li > a:focus {
-		border: 2px solid $palette-primary_1;
 		background: none;
+		border: 2px solid $palette-primary_1;		
 		color: $palette-primary_1;
 	}
 
