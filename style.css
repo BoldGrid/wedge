@@ -563,6 +563,10 @@ blockquote p,
 .woocommerce div.product {
 	margin-top: 40px;
 }
+.woocommerce-account td.download-actions .btn.button-primary,
+.woocommerce-account p.order-again .btn.button-primary {
+	padding: 12px 24px;
+}
 
 /* Product Page Tabs */
 .woocommerce #reviews #comments ol.commentlist li .comment-text {
