@@ -108,7 +108,6 @@
 	-----------------------------------------------*/
 	.site-header,
 	.site-footer,
-	.dropdown-menu,
 	#tertiary-menu,
 	.page-template-page_home .entry-footer {
 		background-color: $palette-primary_2;
@@ -163,6 +162,10 @@
 	.navbar-default .navbar-nav > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
 	.well caption {
+		color: $text-contrast-palette-primary_2;
+	}
+	.dropdown-menu {
+		background-color: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 
