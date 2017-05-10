@@ -168,6 +168,9 @@
 		background-color: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
+	.navbar-default .navbar-toggle {
+		border-color: $text-contrast-palette-primary_2;
+	}
 
 	/*-----------------------------------------------
 	## 3
