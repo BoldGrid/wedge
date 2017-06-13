@@ -587,6 +587,9 @@ blockquote p,
 	color: inherit;
 	font-size: 200%;
 }
+h1.tribe-events-single-event-title:first-letter {
+	font-size: 200%;
+}
 
 /*------------------------------------------------------------------------
 # Footer
