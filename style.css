@@ -60,7 +60,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	position: absolute;
 	top: -50px;
 	width: 50%;
-
 }
 .entry-content > .bgtfw > .container-fluid::before {
 	left: -20px;
@@ -89,13 +88,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .site-content {
 	overflow-x: hidden;
 }
-.site-main {
-	margin-bottom: 50px;
-	min-height: 700px;
-}
-.page-template-page_home .site-main {
-	margin-bottom: 0;
-}
 p {
 	margin-bottom: 15px;
 }
@@ -113,35 +105,11 @@ h5 {
 .slogan {
 	word-wrap: break-word;
 }
-.p-button-primary,
-.p-button-secondary {
-	white-space: nowrap;
-}
 #menu-social li a {
 	-webkit-font-smoothing: antialiased;
 }
 a:hover,
-a:focus,
-.link-primary:hover,
-.link-primary:focus,
-.link-secondary,
-.link-secondary:hover,
-.link-secondary:focus,
-.button-primary:hover,
-.button-primary:focus,
-.button-secondary:hover,
-.button-secondary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-.woocommerce p.buttons a.button:hover,
-.woocommerce #respond input#submit.alt:hover,
-.woocommerce a.button.alt:hover,
-.woocommerce button.button.alt:hover,
-.woocommerce input.button.alt:hover,
-.woocommerce #respond input#submit:hover,
-.woocommerce a.button:hover,
-.woocommerce button.button:hover,
-.woocommerce input.button:hover {
+a:focus {
 	text-decoration: none;
 }
 #secondary-menu,
@@ -151,13 +119,8 @@ input[type="submit"]:focus,
 .mod-beta,
 .mod-beta p,
 .mod-divider p,
-.site-footer p,
-.site-info,
-.attribution {
+.site-footer p {
 	text-align: center;
-}
-#menu-social li a {
-	text-align: right;
 }
 
 /* xs */
@@ -216,20 +179,17 @@ input[type="submit"]:focus,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-input[type="submit"] {
-	border: none;
+.button-secondary {
 	border-radius: 2px;
-	display: inline-block;
 	padding: 8px 45px;
 }
 
 /* Call To Action */
 .call-to-action .button-primary {
-	border: none;
-	border-radius: 2px;
 	display: inline-block;
-	padding: 8px 45px;
+}
+.call-to-action .p-button-primary {
+	margin-top: 0;
 }
 
 /* Positioning */
@@ -244,15 +204,11 @@ input[type="submit"] {
 	display: block;
 	margin-top: 15px;
 }
-.call-to-action .p-button-primary {
-	margin-top: 0;
-}
 
 /* sm */
 @media (min-width: 500px) {
 	.button-primary,
-	.button-secondary,
-	.call-to-action .p-button-primary {
+	.button-secondary {
 		display: inline;
 		margin-top: 0;
 	}
@@ -278,11 +234,7 @@ hr::after {
 .well {
 	background-color: transparent;
 	border: none;
-	border-radius: 4px;
 	box-shadow: none;
-	margin-bottom: 20px;
-	min-height: 20px;
-	padding: 19px;
 }
 .well .table-striped > tbody > tr:nth-of-type(2n+1) {
 	background: transparent;
@@ -351,9 +303,7 @@ select {
 -----------------------------------------------*/
 /* Nav Reset */
 .navbar {
-	background-color: transparent;
 	border: none;
-	border-radius: 0;
 	min-height: 0;
 }
 .navbar-default {
@@ -382,6 +332,9 @@ select {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus,
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover,
 .navbar-default .navbar-nav > .current-menu-parent > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -391,20 +344,12 @@ select {
 	background: none;
 }
 
-/* Open */
-.nav .open > a,
-.nav .open > a:focus,
-.nav .open > a:hover {
-	background: none;
-	border: none; 
-}
-
 /* sm */
 @media (min-width: 768px) {
 	.navbar-default .navbar-nav > li > a,
 	.navbar-default .navbar-nav > .active > a {
 		background: transparent;
-		border-bottom: 3px solid transparent;	
+		border-bottom: 3px solid transparent;
 	}
 	.navbar-default {
 		float: right;
@@ -417,9 +362,6 @@ select {
 #secondary-menu a,
 #menu-social a {
 	padding: 0 5px;
-}
-#secondary-menu {
-	background: none;
 }
 #tertiary-menu {
 	margin-left: -5px;
@@ -519,17 +461,6 @@ blockquote p,
 	text-align: center;
 }
 
-/*-----------------------------------------------
-## Home
------------------------------------------------*/
-.page-template-page_home .entry-footer {
-	margin-left: -15px;
-	margin-right: -15px;
-}
-.page-template-page_home .post-edit-link {
-	margin-left: 14px;
-}
-
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -537,20 +468,11 @@ blockquote p,
 .page-title {
 	margin-top: 50px;
 }
-.widget-area {
-	list-style: none;
-	margin-top: 25px;
-	padding: 25px;	
-}
 .nav-links {
 	margin: 25px 0;
 }
 
 /* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 .panel,
 .panel-default > .panel-heading {
 	background: transparent;
@@ -594,17 +516,8 @@ h1.tribe-events-single-event-title:first-letter {
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
-.site-footer p,
-.site-info,
-.attribution {
+.site-footer p {
 	margin-top: 10px;
-}
-.site-info {
-	margin-bottom: -10px;
-	margin-top: 30px;
-}
-.footer-center-items {
-	padding-left: 0;
 }
 .footer-center-items li a {
 	padding: 5px;
@@ -627,12 +540,6 @@ h1.tribe-events-single-event-title:first-letter {
 /* Disabled Footer */
 .disabled-footer .site-footer {
 	height: 75px;
-}
-.disabled-footer .attribution {
-	padding-bottom: 0;
-}
-.disabled-footer .attribution a {
-	margin-top: -15px;
 }
 .disabled-footer.page-template-page_home .entry-footer {
 	margin-bottom: -15px;

@@ -10,8 +10,6 @@
 	a,
 	.mod-beta h6,
 	.link-primary,
-	#secondary-menu a,
-	#menu-social a,
 	#menu-social li a:hover,
 	#menu-social li a:focus,
 	#menu-social .current-menu-item a,
@@ -39,21 +37,21 @@
 		color: $text-contrast-palette-primary_1;
 	}
 	.button-primary,
-	input[type="submit"],
 	.pager li > a {
 		background: $palette-primary_1;
 		border: 2px solid $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	a.button,
-	a.button.alt,
-	button.button,
-	button.button.alt,
-	input.button,
-	input.button.alt,
-	p.buttons a.button,
-	#respond input#submit,
-	#respond input#submit.alt,
+	.button-primary:hover,
+	.button-primary:focus,
+	.button-secondary:hover,
+	.button-secondary:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
+		background: none;
+		border: 2px solid $palette-primary_1;
+		color: $palette-primary_1;
+	}	
 	.navbar-default .navbar-toggle .icon-bar,
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
@@ -117,15 +115,6 @@
 	.slogan,
 	.tagline,
 	.link-secondary,
-	a.button:hover,
-	a.button.alt:hover,
-	input.button:hover,
-	input.button.alt:hover,
-	button.button:hover,
-	button.button.alt:hover,
-	p.buttons a.button:hover,
-	#respond input#submit:hover,
-	#respond input#submit.alt:hover,
 	.comments-area .comment-content p {
 		color: $palette-primary_2;
 	}
@@ -134,9 +123,6 @@
 	.widget-title,
 	.widget.well,
 	.widget.well a,
-	.site-footer p,
-	.site-info,
-	.attribution,
 	.site-title a,
 	.site-title a:hover,
 	.site-title a:focus,
@@ -156,9 +142,9 @@
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus,
 	.navbar-default .navbar-nav > li > a,
-	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
@@ -178,20 +164,12 @@
 	-----------------------------------------------*/
 	.background-secondary,
 	.background-secondary::before,
-	.background-secondary::after,
-	a.button:hover,
-	button.button:hover,
-	input.button:hover,
-	a.button.alt:hover,
-	p.buttons a.button:hover,
-	button.button.alt:hover,
-	input.button.alt:hover,
-	#respond input#submit.alt:hover,
-	#respond input#submit:hover {
+	.background-secondary::after {
 		background-color: $palette-primary_3;
 	}
 	.button-secondary {
 		background-color: $palette-primary_3;
+		border: 2px solid $palette-primary_3;
 		color: $text-contrast-palette-primary_3;
 	}
 	.mod-alpha,
@@ -199,15 +177,8 @@
 		color: $text-contrast-palette-primary_3;
 	}
 	a:hover,
-	a:focus,
-	.link-primary:hover,
-	.link-primary:focus,
-	.link-secondary:hover,
-	.link-secondary:focus {
+	a:focus {
 		color: $palette-primary_3;
-	}
-	.widget-area {
-		border: 1px solid $palette-primary_3;
 	}
 
 	/*-----------------------------------------------
@@ -243,22 +214,6 @@
 	}
 
 	/*-----------------------------------------------
-	## Button Hover
-	-----------------------------------------------*/
-	.button-primary:hover,
-	.button-primary:focus,
-	.button-secondary:hover,
-	.button-secondary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.pager li > a:hover,
-	.pager li > a:focus {
-		background: none;
-		border: 2px solid $palette-primary_1;		
-		color: $palette-primary_1;
-	}
-
-	/*-----------------------------------------------
 	## Neutral
 	-----------------------------------------------*/
 	.background-primary,
@@ -287,7 +242,6 @@
 	h4,
 	h5,
 	h6,
-	.background-primary h2,
 	.sidebar h2.widget-title,
 	.posted-on,
 	.byline,
@@ -300,6 +254,7 @@
 	&.search .site-content,
 	&.blog .site-content,
 	&.archive .site-content,
+	&.error404 .site-content,
 	.panel-default > .panel-heading,
 	.panel-body,
 	.panel-footer {
@@ -325,22 +280,6 @@
 		.call-to-action-wrapper {
 			background: none;
 		}
-	}
-	&.error404 {
-		.site-content {
-			background: $palette-primary-neutral-color;
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}
-
-	/*-----------------------------------------------
-	## WooCommerce
-	-----------------------------------------------*/
-	&.woocommerce div.product .stock.out-of-stock {
-		color: $palette-primary_1;
-	}
-	&.woocommerce div.product .stock {
-		color: $text-contrast-palette-primary-neutral-color;
 	}
 }
 
