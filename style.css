@@ -173,6 +173,9 @@ a:focus {
 	.single .entry-title {
 		margin-left: -12px;
 	}
+	.bg_attribution-template-default .entry-title {
+		margin-left: 0;
+	}
 }
 
 /*-----------------------------------------------
