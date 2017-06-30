@@ -199,6 +199,7 @@ a:focus {
 .p-button-primary,
 .p-button-secondary {
 	margin: 25px 0;
+	padding-top: 15px;
 }
 
 /* Block vs. Inline */
@@ -214,6 +215,9 @@ a:focus {
 	.button-secondary {
 		display: inline;
 		margin-top: 0;
+	}
+	.gridblock .p-button-secondary {
+		margin: 25px 0;
 	}
 }
 
