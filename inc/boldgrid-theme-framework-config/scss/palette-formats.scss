@@ -75,8 +75,6 @@
 	.panel-default {
 		border-color: $palette-primary_1;
 	}
-
-	/* xs */
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
 	.navbar-default .navbar-nav > .active > a,
@@ -84,9 +82,7 @@
 	.navbar-default .navbar-nav > .active > a:focus {
 		color: $palette-primary_1;
 	}
-
-	/* sm */
-	@media (min-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav > li > a:hover,
 		.navbar-default .navbar-nav > li > a:focus,
 		.navbar-default .navbar-nav > .active > a,
@@ -265,18 +261,18 @@
 	/*-----------------------------------------------
 	## Et Cetera
 	-----------------------------------------------*/
+	input,
+	select {
+		color: #333;
+	}
 	.mod-alpha img {
 		border: 3px solid #fff;
 		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
 	}
-
-	/* Call to Action */
 	.call-to-action-wrapper {
 		background-color: rgba(255, 255, 255, 0.8);
 	}
-
-	/* md */
-	@media (min-width: 992px) {
+	@media only screen and (min-width: 992px) {
 		.call-to-action-wrapper {
 			background: none;
 		}

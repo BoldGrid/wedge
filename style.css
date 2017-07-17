@@ -70,13 +70,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	transform: skew(-40deg);
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .entry-content > .bgtfw > .container-fluid:last-child {
 	padding-bottom: 0;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.entry-content > .bgtfw > .container-fluid:last-child {
 		padding-bottom: 75px;
 	}
@@ -123,7 +123,7 @@ a:focus {
 	text-align: center;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .site-title,
 .site-description,
 .xs-center,
@@ -136,8 +136,8 @@ a:focus {
 	text-align: center;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav,
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
@@ -147,8 +147,8 @@ a:focus {
 	}
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.site-title,
 	.site-description,
 	.xs-center,
@@ -167,8 +167,8 @@ a:focus {
 	display: none;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.archive .entry-title,
 	.single .entry-title {
 		margin-left: -12px;
@@ -209,8 +209,8 @@ a:focus {
 	margin-top: 15px;
 }
 
-/* sm */
-@media (min-width: 500px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary {
 		display: inline;
@@ -253,11 +253,6 @@ hr::after {
 	margin-top: 50px;
 }
 
-input,
-select {
-	color: #333;
-}
-
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
@@ -286,8 +281,8 @@ select {
 	position: absolute;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.call-to-action-wrapper {
 		background-color: transparent;
 		margin-bottom: 0;
@@ -308,7 +303,6 @@ select {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Nav Reset */
 .navbar {
 	border: none;
 	min-height: 0;
@@ -320,8 +314,6 @@ select {
 .navbar-default .navbar-nav {
 	margin-left: -15px;
 }
-
-/* Links */
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > .active > a {
 	padding: 10px 20px;
@@ -329,8 +321,6 @@ select {
 .navbar-default .navbar-nav > li:first-child > a {
 	margin-left: 0;
 }
-
-/* Hover & Active */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .active > a,
@@ -351,8 +341,8 @@ select {
 	background: none;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav > li > a,
 	.navbar-default .navbar-nav > .active > a {
 		background: transparent;
@@ -387,7 +377,8 @@ select {
 /*-----------------------------------------------
 ## Social Menus
 -----------------------------------------------*/
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.menu-social {
 		margin-top: 24px;
 		padding-right: 20px;
@@ -401,7 +392,7 @@ select {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-/* Divider */
+/* Dividers */
 .mod-divider {
 	margin: 4em 0;
 }
@@ -409,6 +400,7 @@ select {
 	margin-top: -45px;
 }
 
+/* Blockquotes */
 blockquote,
 .mod-blockquote {
 	padding-top: 2px;
@@ -447,8 +439,8 @@ blockquote p,
 	width: 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.mod-beta-1 {
 		margin-top: 15%;
 	}
