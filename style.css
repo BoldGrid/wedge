@@ -504,7 +504,7 @@ blockquote p,
 /*-----------------------------------------------
 ## The Events Calendar
 -----------------------------------------------*/
-.palette-primary h4.entry-title:first-letter {
+.post-type-archive-tribe_events h4.entry-title:first-letter {
 	color: inherit;
 	font-size: 200%;
 }
