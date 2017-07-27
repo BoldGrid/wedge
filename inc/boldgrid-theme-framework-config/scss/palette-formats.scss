@@ -8,6 +8,7 @@
 	## 1
 	-----------------------------------------------*/
 	a,
+	hr,
 	.mod-beta h6,
 	.link-primary,
 	#menu-social li a:hover,
@@ -28,7 +29,7 @@
 	.widget.well.widget_calendar a {
 		color: $palette-primary_1;
 	}
-	hr,
+
 	.nav > li > a:focus,
 	.nav > li > a:hover,
 	.mark,
@@ -51,7 +52,7 @@
 		background: none;
 		border: 2px solid $palette-primary_1;
 		color: $palette-primary_1;
-	}	
+	}
 	.navbar-default .navbar-toggle .icon-bar,
 	.navbar-default .navbar-toggle:hover .icon-bar,
 	.navbar-default .navbar-toggle:focus .icon-bar {
@@ -68,9 +69,6 @@
 	.mod-blockquote,
 	blockquote {
 		border-left: 5px solid $palette-primary_1;
-	}
-	hr::after {
-		border-top: 8px solid $palette-primary_1;
 	}
 	.panel-default {
 		border-color: $palette-primary_1;
@@ -197,7 +195,7 @@
 		border: none;
 	}
 	.call-to-action hr {
-		background: $palette-primary_4;
+		color: $palette-primary_4;
 	}
 	.call-to-action .button-primary:hover,
 	.call-to-action .button-primary:focus {

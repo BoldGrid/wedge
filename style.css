@@ -225,18 +225,19 @@ a:focus {
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
-	height: 2px;
-	margin: 0 0 30px 0;	
+	margin-bottom: 30px;
+	margin-top: 0;
+	border: 1px solid;
+	position: relative;
 }
 hr::after {
 	content: "";
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
-	height: 0;	left: 50%;
+	border-top: 8px solid;
+	left: 50%;
 	margin-left: -8px;
 	position: absolute;
-	width: 0;
 }
 .well {
 	background-color: transparent;
