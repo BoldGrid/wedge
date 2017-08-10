@@ -538,7 +538,3 @@ h1.tribe-events-single-event-title:first-letter {
 .disabled-footer .site-footer {
 	height: 75px;
 }
-.disabled-footer.page-template-page_home .entry-footer {
-	margin-bottom: -15px;
-	padding-bottom: 15px;
-}
