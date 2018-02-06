@@ -46,14 +46,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-.entry-content > .bgtfw > .container-fluid.background-primary,
-.entry-content > .bgtfw > .container-fluid.background-secondary,
-.entry-content > .bgtfw > .container-fluid.background-tertiary {
-	padding: 70px 0 150px 0;
-}
 .entry-content > .bgtfw > .container-fluid {
 	margin-right: -15px;
 	margin-left: -15px;
+	padding: 70px 0 150px 0;
 	position: relative;
 	z-index: 100;
 }
